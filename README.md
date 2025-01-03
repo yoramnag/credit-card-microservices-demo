@@ -40,6 +40,7 @@
 
 -   After the command executes successfully, go to **Docker Desktop**
     and verify that the necessary containers are running.
+    ![Alt text](1.png)
 
 ## Testing the APIs with Postman
 
