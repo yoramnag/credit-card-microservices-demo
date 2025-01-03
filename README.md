@@ -63,6 +63,8 @@
 -   Run the request. You will receive a **401 Unauthorized** response.
     This is expected.
 
+![Alt text](images/Screenshot_1.png)
+
 3.  **Run the Request with Authorization:**
 
 -   Now, try to run the request named
