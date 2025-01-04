@@ -41,7 +41,7 @@
 -   After the command executes successfully, go to **Docker Desktop**
     and verify that the necessary containers are running.
 
-![Alt text](1.png)
+![Alt text](images/1.png)
 
 ## Testing the APIs with Postman
 
@@ -63,6 +63,8 @@
 -   Run the request. You will receive a **401 Unauthorized** response.
     This is expected.
 
+![Alt text](images/Screenshot_1.png)
+
 3.  **Run the Request with Authorization:**
 
 -   Now, try to run the request named
@@ -71,6 +73,8 @@
 
 -   You will again receive a **401 Unauthorized** response because the
     client-id creditCard-callcenter-cc doesn't exist in Keycloak.
+
+![Alt text](images/Screenshot_2.png)
 
 ## Set Up Client in Keycloak
 
@@ -83,6 +87,8 @@ Login with the following credentials:
 > **Username**: admin
 >
 > **Password**: admin
+
+![Alt text](images/Screenshot_3.png)
 
 2.  **Create a New Client:**
 
@@ -97,11 +103,18 @@ Login with the following credentials:
 
 -   **Click Next.**
 
+![Alt text](images/Screenshot_4.png)
+![Alt text](images/Screenshot_5.png)
+![Alt text](images/Screenshot_6.png)
+
 3.  **Generate Client Credentials:**
 
 -   Click on **Credentials**.
 
 -   **Copy the Client Secret** and save it.
+
+![Alt text](images/Screenshot_7.png)
+![Alt text](images/Screenshot_8.png)
 
 4.  **Update Postman with the Client Secret:**
 
@@ -110,6 +123,8 @@ Login with the following credentials:
 -   In the **transactions-service-saveTransaction-cc** request, update
     the **Authorization** header with the **client secret** you just
     copied.
+
+![Alt text](images/Screenshot_9.png)
 
 ## Obtain Access Token in Postman
 
@@ -124,6 +139,10 @@ Login with the following credentials:
 -   Try running the transactions-service-saveTransaction-cc request
     again. You should receive a **403 Forbidden** response.
 
+![Alt text](images/Screenshot_10.png)
+![Alt text](images/Screenshot_11.png)
+![Alt text](images/Screenshot_12.png)
+
 ## Assign Roles to Client in Keycloak
 
 1.  **Create New Roles in Keycloak:**
@@ -136,6 +155,11 @@ Login with the following credentials:
 > TRANSACTIONS
 >
 > BLACK-LIST
+
+![Alt text](images/Screenshot_13.png)
+![Alt text](images/Screenshot_14.png)
+![Alt text](images/Screenshot_15.png)
+![Alt text](images/Screenshot_16.png)
 >
 > 2\. **Assign Roles to the Client:**
 
@@ -146,16 +170,26 @@ Login with the following credentials:
 
 -   Assign both the **TRANSACTIONS** and **BLACK-LIST** roles.
 
+![Alt text](images/Screenshot_17.png)
+![Alt text](images/Screenshot_18.png)
+![Alt text](images/Screenshot_19.png)
+![Alt text](images/Screenshot_20.png)
+
 3.  **Reattempt to Get Access Token:**
 
 -   In Postman, click on **Get New Access Token**.
 
 -   Click **Use Token**.
 
+![Alt text](images/Screenshot_10.png)
+![Alt text](images/Screenshot_11.png)
+
 4.  **Run the Request Again:**
 
 -   Now, you should receive a **201 Created** response, indicating that
     the transaction was successfully saved.
+
+![Alt text](images/Screenshot_21.png)
 
 ## Grafana
 
