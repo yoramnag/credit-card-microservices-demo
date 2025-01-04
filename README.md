@@ -247,7 +247,7 @@ Login with the following credentials:
 -   Click on the **Tempo button** to automatically open the trace
     associated with that request and view the trace details.
 
-![Alt text](images/Screenshot_23 - Copy.png)
+![Alt text](images/Screenshot_23_Copy.png)
 ![Alt text](images/Screenshot_25.png)
 
 5.  Set Up Prometheus Dashboard:
