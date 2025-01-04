@@ -1,5 +1,12 @@
 # 
 
+# Architectural Overview
+The credit card system is designed based on the Microservices architecture pattern. It consists of multiple, interconnected components, 
+each responsible for specific functionality. This design promotes separation of concerns, modularity, and ease of maintenance, 
+while also ensuring scalability and extensibility. The system is built to handle dynamic traffic, high availability, and seamless integration with other systems.
+
+![Alt text](images/credit-card microservices architecture.png)
+
 # Credit Card Microservices Demo Project Guide
 
 ## System Requirements
