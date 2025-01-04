@@ -74,6 +74,8 @@
 -   You will again receive a **401 Unauthorized** response because the
     client-id creditCard-callcenter-cc doesn't exist in Keycloak.
 
+![Alt text](images/2.png)
+
 ## Set Up Client in Keycloak
 
 1.  **Access Keycloak Admin Console:**
@@ -85,6 +87,8 @@ Login with the following credentials:
 > **Username**: admin
 >
 > **Password**: admin
+
+![Alt text](images/3.png)
 
 2.  **Create a New Client:**
 
@@ -99,11 +103,18 @@ Login with the following credentials:
 
 -   **Click Next.**
 
+![Alt text](images/4.png)
+![Alt text](images/5.png)
+![Alt text](images/6.png)
+
 3.  **Generate Client Credentials:**
 
 -   Click on **Credentials**.
 
 -   **Copy the Client Secret** and save it.
+
+![Alt text](images/7.png)
+![Alt text](images/8.png)
 
 4.  **Update Postman with the Client Secret:**
 
@@ -112,6 +123,8 @@ Login with the following credentials:
 -   In the **transactions-service-saveTransaction-cc** request, update
     the **Authorization** header with the **client secret** you just
     copied.
+
+![Alt text](images/9.png)
 
 ## Obtain Access Token in Postman
 
@@ -126,6 +139,10 @@ Login with the following credentials:
 -   Try running the transactions-service-saveTransaction-cc request
     again. You should receive a **403 Forbidden** response.
 
+![Alt text](images/10.png)
+![Alt text](images/11.png)
+![Alt text](images/12.png)
+
 ## Assign Roles to Client in Keycloak
 
 1.  **Create New Roles in Keycloak:**
@@ -138,6 +155,11 @@ Login with the following credentials:
 > TRANSACTIONS
 >
 > BLACK-LIST
+
+![Alt text](images/13.png)
+![Alt text](images/14.png)
+![Alt text](images/15.png)
+![Alt text](images/16.png)
 >
 > 2\. **Assign Roles to the Client:**
 
@@ -148,16 +170,26 @@ Login with the following credentials:
 
 -   Assign both the **TRANSACTIONS** and **BLACK-LIST** roles.
 
+![Alt text](images/17.png)
+![Alt text](images/18.png)
+![Alt text](images/19.png)
+![Alt text](images/20.png)
+
 3.  **Reattempt to Get Access Token:**
 
 -   In Postman, click on **Get New Access Token**.
 
 -   Click **Use Token**.
 
+![Alt text](images/10.png)
+![Alt text](images/11.png)
+
 4.  **Run the Request Again:**
 
 -   Now, you should receive a **201 Created** response, indicating that
     the transaction was successfully saved.
+
+![Alt text](images/21.png)
 
 ## Grafana
 
