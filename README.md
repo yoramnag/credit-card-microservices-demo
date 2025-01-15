@@ -7,15 +7,19 @@ while also ensuring scalability and extensibility. The system is built to handle
 
 ![Alt text](images/credit_card_microservices_architecture.png)
 
-# Microservices project Code
-
+# Microservices Project Code
+black-list-service
 > [**https://github.com/yoramnag/black-list-service-SB3.git**](https://github.com/yoramnag/black-list-service-SB3.gitt)
+credit-card-config
 > [**https://github.com/yoramnag/credit-card-config.git**](https://github.com/yoramnag/credit-card-config.git)
+naming-server
 > [**https://github.com/yoramnag/naming-server-SB3.git**](https://github.com/yoramnag/naming-server-SB3.git)
+transactions-service
 > [**https://github.com/yoramnag/transactions-service-SB3.git**](https://github.com/yoramnag/transactions-service-SB3.git)
+config-server
 > [**https://github.com/yoramnag/spring-cloud-config-server-SB3.git**](https://github.com/yoramnag/spring-cloud-config-server-SB3.git)
+gateway-server
 > [**https://github.com/yoramnag/gatewayserver-SB3.git**](https://github.com/yoramnag/gatewayserver-SB3.git)
-> [**https://github.com/yoramnag/credit-card-config.git**](https://github.com/yoramnag/credit-card-config.git)
 
 # Credit Card Microservices Demo Project Guide
 
