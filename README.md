@@ -9,7 +9,7 @@ while also ensuring scalability and extensibility. The system is built to handle
 
 # Microservices Project Code
 -   black-list-service
-> [**https://github.com/yoramnag/black-list-service-SB3.git**](https://github.com/yoramnag/black-list-service-SB3.gitt)
+> [**https://github.com/yoramnag/black-list-service-SB3.git**](https://github.com/yoramnag/black-list-service-SB3.git)
 -   credit-card-config
 > [**https://github.com/yoramnag/credit-card-config.git**](https://github.com/yoramnag/credit-card-config.git)
 -   naming-server
